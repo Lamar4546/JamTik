@@ -1,0 +1,18 @@
+<svg width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="jamTik icon: a green and yellow ticket with a J and a check mark">
+  <!-- Background offset ticket layer (Mint Green) -->
+  <path transform="translate(276 276) rotate(-10)" fill="#6EE7B7" d="M-132-105H132a28 28 0 0 1 28 28V-26a26 26 0 0 0 0 52V77a28 28 0 0 1-28 28H-132a28 28 0 0 1-28-28V26a26 26 0 0 0 0-52V-77a28 28 0 0 1 28-28z"></path>
+  
+  <g transform="translate(256 256) rotate(-10)">
+    <!-- Main top ticket layer (Butter Yellow) -->
+    <path fill="#FDE047" d="M-132-105H132a28 28 0 0 1 28 28V-26a26 26 0 0 0 0 52V77a28 28 0 0 1-28 28H-132a28 28 0 0 1-28-28V26a26 26 0 0 0 0-52V-77a28 28 0 0 1 28-28z"></path>
+    
+    <!-- Perforated vertical line (Deep Forest Green) -->
+    <path d="M60-80V80" stroke="#14532D" stroke-width="6" stroke-dasharray="2 14" stroke-linecap="round" fill="none"></path>
+    
+    <!-- Letter 'J' (Deep Forest Green) -->
+    <path d="M-50-55H-20V25a38 38 0 0 1-76 0" stroke="#14532D" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+    
+    <!-- Checkmark (Deep Forest Green) -->
+    <path d="M92 10L104 24L124-6" stroke="#14532D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+  </g>
+</svg>

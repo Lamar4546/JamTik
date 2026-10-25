@@ -8,23 +8,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:jamtik/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  testWidgets('setup screen renders and validates required fields', (
+    WidgetTester tester,
+  ) async {
+    
+    await tester.ensureVisible(find.text('CLAIM TICKET & SIGN UP'));
+    await tester.tap(find.text('CLAIM TICKET & SIGN UP'));
+    await tester.pumpAndSettle();
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
-
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    expect(find.text('PASS REGISTRATION'), findsOneWidget);
+    expect(find.text('Enter your full name'), findsOneWidget);
+    expect(find.text('Enter your email address'), findsOneWidget);
   });
 }
